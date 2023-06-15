@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color:lightcoral;
+}
+.extra-div h2,.serviceid h2{
+    font-size: 1.1rem;
+    margin: 20px 0px 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+i{
+    color: lightseagreen;
+}
+/***************************Actual Css*************************************/
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(73, 70, 70, 0.3),rgba(166, 166, 170, 0.671)), url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  
+
+}
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    opacity: .3;
+ z-index: -2;
+    background: linear-gradient(to right,#a18087 0%, #f5ac8a 0%,#ddb7ba 100%);
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    opacity: .3;
+ z-index: -1;
+    
+    background: linear-gradient(to right,#a18087 0%, #f5ac8a 0%,#ddb7ba 100%);
+
+}
+.nav-item a{
+    color: white !important;
+    font-weight: bold;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+      
+}
+.center-div{
+    position: relative;
+    top:50%;
+}
+.header-buttons a{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding:12px 35px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  line-height: 1.4;
+    margin: 0 5px;
+
+}
+.header-buttons a:hover{
+    color:black;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px 0 rgba(255, 0, 0, 0.3);
+}
+
+.center-div p{
+    padding: 5px;
+    letter-spacing: 5px;
+    font-size: medium;
+    margin-bottom: 25px;
+
+}
+/************************************Three extra divs******************/
+.header-extra{
+    width: 100%;
+    height: auto;
+    margin: 100px  0px;
+    text-align: center;
+ 
+}
+.extra-div{
+background: white;
+padding: 30px !important;
+transition: 0.3s;
+
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0 ,0, 0.3);
+    transform: translateY(-20px);
+}
+/*****Service css Starts******/
+.services{
+   background: #f7f7f9;
+   padding: 50px 0 ;
+   margin-bottom: 50px;
+}
+.headings{
+    margin-bottom: 50px;
+
+}
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.serviceicon{
+   align-self: center;
+}
+.progress{
+    height: 0.6rem !important;
+    margin-bottom:25px !important ;
+}
+/*****Service css ends******/
+/*****project work starts******/
+.project-work{
+    margin: 100px 0;
+}
+.project-work h1{
+    text-align: center;
+    font-size: 2rem;
+}
+/*****project work ends******/
+/*****pricing starts******/
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+opacity: .6;
+ z-index: -1;
+    
+    background: linear-gradient(160deg,#ff0000 55%,rgb(255, 255, 255) 25%);
+
+}
+/*--Slide show starts-----*/
+.slideshow{
+    width: 100%;
+    height:100vh;
+    padding: 80px 0;
+    
+}
+.box{
+    text-align:center;
+    border: 1px solid rgba(0, 0 ,0, 0.3);
+    box-shadow: 0 5px 10px 0 rgba(0, 0 ,0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+.box:hover p{
+   color:white !important
+   ;
+}
+.carousel-indicators {
+    position: absolute;
+    
+    bottom: -60px !important;
+}
+.carousel-indicators li{
+    background-color: red!important;
+}
+.box a{
+    position: relative;
+}
+.box a img{
+height: 100px;
+width:100px;
+border-radius: 50%;
+margin-top: 20px;
+}
+.box a:after{
+    content: "\f10d";
+    font-family:"Font Awesome\5 Free";
+}
+
+
+
+/*--Slide show ends-----*/
